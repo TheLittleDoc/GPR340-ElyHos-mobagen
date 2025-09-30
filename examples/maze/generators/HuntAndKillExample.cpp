@@ -31,7 +31,7 @@ std::vector<Point2D> HuntAndKillExample::getVisitables(World* w, const Point2D& 
   auto sideOver2 = w->GetSize() / 2;
   std::vector<Point2D> visitables;
 
-  // todo: code this
+  if (p.y > 0 && w->GetNode(p).GetNorth())
 
   return visitables;
 }
